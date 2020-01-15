@@ -24,11 +24,11 @@ public class RollerCoaster extends Attraction implements ISecurity, ITicketed {
         return this.price;
     }
 
-//    public double priceForVisitor(Visitor visitor){
-//        if(visitor.getHeight() > 200){
-//            return price * 2;
-//        }
-//        return price;
-//    }
+    public double priceForVisitor(Visitor visitor){
+        if(visitor.getHeight() > 200){
+            return price * 2;
+        }
+        return price;
+    }
 
 }
