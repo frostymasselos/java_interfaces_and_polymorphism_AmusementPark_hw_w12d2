@@ -9,7 +9,7 @@ public class Dodgems extends Attraction implements ITicketed {
 
     public Dodgems(String name, int rating) {
         super(name, rating);
-        this.price = 10;
+        this.price = 4.00;
     }
 
     public double defaultPrice(){ return this.price; }

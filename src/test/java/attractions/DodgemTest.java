@@ -36,13 +36,13 @@ public class DodgemTest {
 
     @Test
     public void hasDefaultFee() {
-        assertEquals(10, dodgems.defaultPrice(), 0.01);
+        assertEquals(4.50, dodgems.defaultPrice(), 0.01);
     }
 
     @Test
     public void halvesFeeForUnderTwelve(){
-        assertEquals(5, dodgems.priceForVisitor(childUnder12), 0.01);
-        assertEquals(10, dodgems.priceForVisitor(childIs12), 0.01);
+        assertEquals(2.25, dodgems.priceForVisitor(childUnder12), 0.01);
+        assertEquals(4.50, dodgems.priceForVisitor(childIs12), 0.01);
     }
 
 }

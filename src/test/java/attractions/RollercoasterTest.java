@@ -66,17 +66,17 @@ public class RollercoasterTest {
 
     @Test
     public void getDefaultFee(){
-        assertEquals(10, rollerCoaster.defaultPrice(), 0.01);
+        assertEquals(8.40, rollerCoaster.defaultPrice(), 0.01);
     }
 
     @Test
     public void canChargeDoubleFeeForTallPerson(){
-        assertEquals(20, rollerCoaster.priceForVisitor(visitorTall), 0.01);
+        assertEquals(16.80, rollerCoaster.priceForVisitor(visitorTall), 0.01);
     }
 
     @Test
     public void canChargeDefaultFeeForSmallPerson(){
-        assertEquals(10, rollerCoaster.priceForVisitor(visitorSmall), 0.01);
+        assertEquals(8.40, rollerCoaster.priceForVisitor(visitorSmall), 0.01);
     }
 }
 

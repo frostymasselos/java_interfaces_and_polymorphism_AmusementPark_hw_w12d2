@@ -10,7 +10,7 @@ public class RollerCoaster extends Attraction implements ISecurity, ITicketed {
 
     public RollerCoaster(String name, int rating) {
         super(name, rating);
-        this.price = 10;
+        this.price = 8.40;
     }
 
     public boolean isAllowedTo(Visitor visitor){
