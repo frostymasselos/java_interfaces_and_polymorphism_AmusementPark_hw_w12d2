@@ -4,7 +4,7 @@ import behaviours.ISecurity;
 import behaviours.ITicketed;
 import people.Visitor;
 
-public class RollerCoaster extends Attraction implements ITicketed {
+public class RollerCoaster extends Attraction implements ISecurity, ITicketed {
 
     private double price;
 
